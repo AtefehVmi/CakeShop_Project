@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+
+* img{
+  border-radius: 20px;
+  font-family: 'Karla', Arial, sans-serif;
+  
+}
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Karla', Arial, sans-serif;
+    position: relative;
+    top: 0;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.icon {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #333;
+}
+.landing-page {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: pink;
+    font-family: 'Karla', Arial, sans-serif;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.landing-page-text {
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    color: pink;
+}
+
+h3 {
+    font-size: 18px;
+    color: black;
+}
+
+.order-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#menu {
+  font-family: 'Karla', Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.menu-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.cake-item{
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid pink;
+    padding: 10px;
+
+}
+.add-to-basket{
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.cake-details{
+    align-items: center;
+}
+
+.cake-item img{
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.show-more{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: 'Karla', Arial, sans-serif;
+  
+}
+.hidden-elements{
+  display: none;
+}
+.hidden {
+  display: none;
+}
+
+.hidden img {
+  margin-bottom: 10px;
+}
+
+.hidden .cake-details {
+  text-align: center;
+}
+
+.hidden-basket {
+    display: none;
+}
+
+#basket-window {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 300px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    flex-direction: column;
+}
+
+#basket-window h3{
+  font-family: 'Karla', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+#basket-items li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+#basket-items img {width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.fa-xmark{
+  align-self:flex-end;
+  font-size: 20px;
+  margin-left: 10px;
+  color: #333;
+}
+
+#cake-pics {
+    font-family: 'Karla', Arial, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+#cake-pics h2{
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.cake-pics-container {
+    display: flex;
+    overflow: hidden;
+    animation: cake-slide 15s linear infinite;
+    width: fit-content;
+}
+  
+.cake-pics-container img {
+    margin: 0 10px;
+    border-radius: 20px;
+}
+  
+@keyframes cake-slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+.footer{
+  background-color: pink;
+  height: 120px;
+  border-radius: 10px;
+  display: flex;
+   justify-content: space-evenly; 
+   flex-direction: column; 
+   align-items: center;
+} 
+
+.footer-links{
+  font-family: 'Karla', Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px; 
+}
+
+.footer-icons {
+  font-size: 20px;
+  margin-left: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #333 !important;
+}
+
+.footer-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+#info-window{
+    position: relative;
+    font-family: 'Karla', Arial, sans-serif;
+    bottom: 200px;
+    right: -10px;
+    width: 300px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    flex-direction: column;
+}

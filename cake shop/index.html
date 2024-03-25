@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Cake Shop</title>
+  <script src="https://kit.fontawesome.com/fc85093ba5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Cakes</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="icons">
+      <i class="icon fas fa-search" id="search-icon" style="cursor: pointer;"></i>
+      <i class="icon fas fa-shopping-cart" id="basket-icon" style="cursor: pointer;"></i>
+    </div>
+  </header>
+  <div id="basket-window" class="hidden">
+    <i class="fa-solid fa-xmark" style="cursor: pointer;"></i>
+    <h3>My Basket</h3>
+    <hr class="my-basket-line" style="border: none; border-bottom: 4px solid pink; height: 0px; width: 200px;">
+    <ul id="basket-items"></ul>
+  </div>
+
+
+  <div id="home" class="landing-page">
+    <img src="pics\pexels-julio-melanda-1448721.jpg" alt="Cakeish Factory" width="840" height="600">
+    <div class="landing-page-text">
+      <h1 style="color: black;">Cakeish Factory</h1>
+      <h3>Soft and moist, with layers so fine. A slice of cake, a treat so sweet, it's pure daylight.</h3>
+      <button class="order-button">
+        <a style="text-decoration: none; color: #fff;" href="#menu">
+          Order Now
+        </a>
+      </button>
+    </div>
+  </div>
+  <section id="menu">
+    <h2>Menu</h2>
+    <div class="menu-section">
+
+
+      <div class="cake-item">
+        <img id="cake1" src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 1" width="300">
+        <div class="cake-details">
+          <h3>Chocolate Cake</h3>
+          <p>Price: 10$</p>
+          <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+          <div class="ratings">
+            <p>Customer Ratings:⭐️⭐️⭐️⭐️</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cake-item">
+        <img id="cake2" src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 2" width="300">
+        <div class="cake-details">
+          <h3>Chocolate Cake</h3>
+          <p>Price: 10$</p>
+          <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+          <div class="ratings">
+            <p>Customer Ratings:⭐️⭐️⭐️⭐️</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cake-item">
+        <img id="cake3" src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 3" width="300">
+        <div class="cake-details">
+          <h3>Chocolate Cake</h3>
+          <p>Price: 10$</p>
+          <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+          <div class="ratings">
+            <p>Customer Ratings:⭐️⭐️⭐️⭐️</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cake-item">
+        <img id="cake4" src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 4" width="300">
+        <div class="cake-details">
+          <h3>Chocolate Cake</h3>
+          <p>Price: 10$</p>
+          <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+          <div class="ratings">
+            <p>Customer Ratings:⭐️⭐️⭐️⭐️</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="hidden-elements cake-item">
+        <img id="cake4" src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 4" width="300">
+        <div class="cake-details">
+          <h3>Chocolate Cake</h3>
+          <p>Price: 10$</p>
+          <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+          <div class="ratings">
+            <p>Customer Ratings:⭐️⭐️⭐️⭐️</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden-elements cake-item">
+        <img id="cake4" src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 4" width="300">
+        <div class="cake-details">
+          <h3>Chocolate Cake</h3>
+          <p>Price: 10$</p>
+          <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+          <div class="ratings">
+            <p>Customer Ratings:⭐️⭐️⭐️⭐️</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden-elements cake-item">
+        <img id="cake4" src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 4" width="300">
+        <div class="cake-details">
+          <h3>Chocolate Cake</h3>
+          <p>Price: 10$</p>
+          <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+          <div class="ratings">
+            <p>Customer Ratings:⭐️⭐️⭐️⭐️</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden-elements cake-item">
+        <img id="cake4" src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 4" width="300">
+        <div class="cake-details">
+          <h3>Chocolate Cake</h3>
+          <p>Price: 10$</p>
+          <button class="add-to-basket" onclick="addToBasket()">Add to Basket</button>
+          <div class="ratings">
+            <p>Customer Ratings:⭐️⭐️⭐️⭐️</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <a class="show-more" onclick="showHiddenItems()">Show more</a>
+  <hr class="show-more-line" style="border: none; border-bottom: 4px solid pink; height: 0px; width: 90px;">
+
+  <section id="cake-pics">
+    <h2>Our cakes</h2>
+    <div class="cake-pics-container">
+      <img src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 1" width="400">
+      <img src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 2" width="400">
+      <img src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 3" width="400">
+      <img src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 4" width="400">
+      <img src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 5" width="400">
+      <img src="/pics/pexels-anna-belousova-10414167.jpg" alt="Cake 6" width="400">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div id="about" class="footer-links">
+      <a style="cursor: pointer;" onclick="toggleInfoWindow('About Us')">About Us</a>
+      <a style="cursor: pointer;" onclick="toggleInfoWindow('Contact Us')">Contact Us</a>
+      <a style="cursor: pointer;" onclick="toggleInfoWindow('Help')">Help</a>
+      <a style="cursor: pointer;" onclick="toggleInfoWindow('Categories')">Categories</a>
+      <a style="cursor: pointer;" onclick="toggleInfoWindow('Careers')">Careers</a>
+    </div>
+    <div>
+      <a class="footer-icons" href="https://web.telegram.org">
+        <i class="fa-brands fa-telegram"></i>
+      </a>
+      <a class="footer-icons" href="https://www.instagram.com">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a class="footer-icons" href="https://mail.google.com">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+  </footer>
+
+  <div id="info-window" class="hidden">
+    <div class="info-content">
+      <h3 id="info-title"></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium, nisi vel fringilla consequat, nunc metus
+        malesuada turpis, non bibendum tortor magna sit amet ipsum. Nunc convallis odio non nunc congue vestibulum.
+        Donec pharetra tincidunt iaculis. Donec eget odio at nulla venenatis pellentesque vitae et ligula.</p>
+    </div>
+  </div>
+
+  <script>
+    //shows more cakes
+    function showHiddenItems() {
+      var hiddenItems = document.getElementsByClassName("hidden-elements");
+      for (var i = 0; i < hiddenItems.length; i++) {
+        hiddenItems[i].style.display = "flex";
+      }
+      document.getElementsByClassName("show-more")[0].style.display = "none";
+      document.getElementsByClassName("show-more-line")[0].style.display = "none";
+    }
+
+    //add to basket icon
+    var addToBasketButtons = document.querySelectorAll(".add-to-basket");
+
+    addToBasketButtons.forEach(function (button) {
+      button.addEventListener("click", addToBasket);
+    });
+
+    var basketIcon = document.getElementById("basket-icon");
+    var basketWindow = document.getElementById("basket-window");
+
+    basketIcon.addEventListener("click", toggleBasketWindow);
+
+    //adding cakes to the basket
+    function addToBasket(event) {
+      var cakeItem = event.target.closest(".cake-item");
+      var cakeImage = cakeItem.querySelector("img").src;
+      var cakeName = cakeItem.querySelector("h3").textContent;
+      var cakePrice = cakeItem.querySelector("p").textContent;
+
+      //displaying cakes in the basket
+      var listItem = document.createElement("li");
+      var imageElement = document.createElement("img");
+      var nameElement = document.createElement("span");
+      var priceElement = document.createElement("span");
+
+      imageElement.src = cakeImage;
+      nameElement.textContent = cakeName;
+      priceElement.textContent = cakePrice;
+
+      listItem.appendChild(imageElement);
+      listItem.appendChild(nameElement);
+      listItem.appendChild(priceElement);
+
+      var basketItems = document.getElementById("basket-items");
+      basketItems.appendChild(listItem);
+
+      alert("Added to basket: " + cakeName);
+    }
+
+    function toggleBasketWindow() {
+      var basketWindow = document.getElementById("basket-window");
+      basketWindow.classList.toggle("hidden");
+    }
+
+    //searches for cakes
+    var searchIcon = document.getElementById("search-icon");
+    searchIcon.addEventListener("click", searchCakes);
+
+    function searchCakes() {
+
+      var cakeName = prompt("Enter the name of the cake:");
+      if (cakeName) {
+        alert("Searching for cake: " + cakeName);
+      } else {
+        alert("Please enter a cake name.");
+      }
+    }
+
+    function toggleInfoWindow(title) {
+      var infoWindow = document.getElementById("info-window");
+      var infoTitle = document.getElementById("info-title");
+      infoTitle.innerText = title;
+      if (infoWindow.classList.contains("hidden")) {
+        infoWindow.classList.remove("hidden");
+      } else {
+        infoWindow.classList.add("hidden");
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
